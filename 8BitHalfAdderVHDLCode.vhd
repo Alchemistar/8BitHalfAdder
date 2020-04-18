@@ -25,8 +25,8 @@ begin
   Sout(1) <= Num_1(1) xor Num_2(1);
   Cout(1) <= Num_1(1) and Num_2(1); --Half Adder 1
   
-    Sum(1) <= Cout(0) xor Sout(1);
-    Cout(8) <= Cout(0) and Sout(1); --Half Adder 8
+    Sum(1) <= Cout(0) xor Sout(1); 
+    Cout(8) <= Cout(0) and Sout(1); --Half Adder 8 
     
   Sout(2) <= Num_1(2) xor Num_2(2);
   Cout(2) <= Num_1(2) and Num_2(2); --Half Adder 2 
@@ -47,7 +47,7 @@ begin
   Sout(4) <= Num_1(4) xor Num_2(4);
   Cout(4) <=Num_1(4) and Num_2(4);
   
-  GateOr(2) <= Cout(10) or Cout(2);
+  GateOr(2) <= Cout(10) or Cout(3);
   
     Sum(4) <= GateOr(2) xor Sout(4);
     Cout(11) <= GateOr(2) and Sout(4);
@@ -55,7 +55,7 @@ begin
   Sout(5) <= Num_1(5) xor Num_2(5);
   Cout(5) <=Num_1(5) and Num_2(5);
   
-  GateOr(3) <= Cout(11) or Cout(3);
+  GateOr(3) <= Cout(11) or Cout(4);
   
     Sum(5) <= GateOr(3) xor Sout(5);
     Cout(12) <= GateOr(3) and Sout(5);
@@ -63,7 +63,7 @@ begin
   Sout(6) <= Num_1(6) xor Num_2(6);
   Cout(6) <=Num_1(6) and Num_2(6);
   
-  GateOr(4) <= Cout(12) or Cout(4);
+  GateOr(4) <= Cout(12) or Cout(5);
   
     Sum(6) <= GateOr(4) xor Sout(6);
     Cout(13) <= GateOr(4) and Sout(6);
@@ -71,7 +71,7 @@ begin
   Sout(7) <= Num_1(7) xor Num_2(7);
   Cout(7) <=Num_1(7) and Num_2(7);
   
-  GateOr(5) <= Cout(13) or Cout(5);
+  GateOr(5) <= Cout(13) or Cout(6);
   
     Sum(7) <= GateOr(5) xor Sout(7);
     Cout(14) <= GateOr(5) and Sout(7);
@@ -81,7 +81,3 @@ begin
     
 end architecture Behavioral;
      
-  
-    
-  
-
